@@ -12,6 +12,7 @@ export default function About() {
             src={logo}
             alt={data.name}
             className="w-full max-w-xs object-contain mx-auto"
+            loading="lazy"
           />
         </div>
         <div className="text-container flex flex-col md:w-2/3">

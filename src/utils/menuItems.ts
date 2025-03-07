@@ -1,13 +1,13 @@
 import { Menus } from "../types/menu";
 import { Bundle } from "../types/menu";
 
-import chocolate from "../assets/images/menu/chocolate.jpg";
-import strawberry from "../assets/images/menu/strawberry.jpg";
-import blueberry from "../assets/images/menu/strawberry.jpg";
-import original from "../assets/images/menu/original.jpg";
-import sosis from "../assets/images/menu/sosis.jpg";
+import chocolate from "../assets/images/menu/chocolate.webp";
+import strawberry from "../assets/images/menu/strawberry.webp";
+import blueberry from "../assets/images/menu/strawberry.webp";
+import original from "../assets/images/menu/original.webp";
+import sosis from "../assets/images/menu/sosis.webp";
 
-import bombolone from "../assets/images/menu/bombolonibundle.jpg";
+import bombolone from "../assets/images/menu/bombolonibundle.webp";
 
 export const menuBundle: Bundle[] = [
   {
@@ -48,5 +48,5 @@ export const menuDonat: Menus[] = [
     price: 2500,
   },
   { id: 4, name: "Original", image: original, color: "#D2B48C", price: 2500 },
-  { id: 5, name: "Sosis", image: sosis, color: "#F8A488", price: 3000 },
+  { id: 5, name: "Sosis", image: sosis, color: "#F8A488", price: 4000 },
 ];

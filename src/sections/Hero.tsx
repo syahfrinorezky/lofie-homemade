@@ -20,7 +20,12 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full md:-top-15 lg:-top-30">
         <div className="lg:max-w-screen-md mx-auto">
           <div className="title-container flex flex-col justify-center items-center gap-y-2">
-            <img src={logo} alt={data.name} className="w-2/4 md:w-1/4" />
+            <img
+              src={logo}
+              alt={data.name}
+              className="w-2/4 md:w-1/4"
+              loading="lazy"
+            />
             <h1 className="text-3xl font-extrabold font-primary text-primary md:text-3xl">
               {data.name}
             </h1>

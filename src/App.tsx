@@ -1,6 +1,6 @@
 import "./index.css";
 import { Navbar, Footer, BackToTop } from "./components";
-import { Hero, About, Menu, Review, Contact } from "./sections";
+import { Hero, About, Menu, Review } from "./sections";
 
 export default function App() {
   return (
@@ -11,7 +11,6 @@ export default function App() {
       <About />
       <Menu />
       <Review />
-      <Contact />
       <Footer />
     </div>
   );

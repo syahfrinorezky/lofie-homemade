@@ -1,6 +1,6 @@
 import { menuBundle, menuDonat } from "../utils/menuItems";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
-import bgSosis from "../assets/images/menu/sosis.jpg";
+import bgSosis from "../assets/images/menu/sosis.webp";
 
 export default function Menu() {
   return (
