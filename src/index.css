@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b22222;
+  --color-secondary: #171717;
+
+  --font-primary: "Fredoka", serif;
+  --font-secondary: "Poppins", serif;
+  --font-tertiary: "Montserrat", serif;
+}
