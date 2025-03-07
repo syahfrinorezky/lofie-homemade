@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# Lofie Homemade 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lofie Homemade adalah sebuah website landing page yang menampilkan informasi tentang produk makanan home-made, khususnya donat, dengan sistem pre-order.
 
-Currently, two official plugins are available:
+## 🚀 Fitur
+- Tampilan sederhana dan responsif
+- Informasi produk donat dengan gambar berkualitas
+- Sistem pre-order sederhana
+- Navigasi mudah digunakan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Demo Website
+[🌐 Kunjungi Lofie Homemade](https://lofie-homemade.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Teknologi yang Digunakan
+- **React + Vite**: Framework untuk frontend
+- **TypeScript**: Untuk kode yang lebih aman dan terstruktur
+- **TailwindCSS**: Styling yang cepat dan responsif
+- **Vercel**: Hosting dan deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Cara Menjalankan di Lokal
+1. Clone repository ini:
+   ```sh
+   git clone https://github.com/username/repo-lofie-homemade.git
+   cd repo-lofie-homemade
+   ```
+2. Install dependensi:
+   ```sh
+   npm install
+   ```
+3. Jalankan server development:
+   ```sh
+   npm run dev
+   ```
+4. Buka `http://localhost:5173` di browser.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📸 Screenshot
+![Preview Website](https://lofie-homemade.vercel.app/screenshot.jpg)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Kontribusi
+Jika ingin berkontribusi, silakan fork repository ini dan ajukan pull request dengan perbaikan atau fitur baru.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
+Dibuat dengan oleh [Syahfrino Rezky Oktaviant](https://github.com/syahfrinorezky) ✨
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
