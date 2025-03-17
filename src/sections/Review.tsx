@@ -45,8 +45,12 @@ export default function Review() {
               <div
                 key={item.id}
                 className="review-box p-4 shadow-gray-500 w-full h-full flex flex-col rounded-md shadow-md">
-                <FaQuoteLeft className="text-2xl text-primary" />
-                <p className=" mt-4">{item.feedback}</p>
+                <div className="flex items-center">
+                  <FaQuoteLeft className="text-xl text-primary md:text-2xl" />
+                </div>
+                <div className="feedback-container">
+                  <p className=" mt-4">{item.feedback}</p>
+                </div>
 
                 <div className="flex h-full items-end mt-5">
                   <span className="flex bg-gray-400 p-4 rounded-full mr-3">
@@ -72,7 +76,7 @@ export default function Review() {
                 onClick={() => setShowAll(!showAll)}
                 className="bg-primary w-full text-white px-4 py-2 rounded-md flex items-center justify-center font-bold uppercase font-tertiary gap-x-2">
                 {showAll ? <FaChevronUp /> : <FaChevronDown />}
-                {showAll ? "Lebih sedikit" : "Lebih banyak"}
+                {showAll ? "Sembunyikan" : "Tampilkan"}
               </button>
             </div>
           )}
